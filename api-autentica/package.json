@@ -1,0 +1,19 @@
+{
+  "name": "sistemaautenticacoangularjs",
+  "version": "1.0.0",
+  "description": "Sistema de cadastro simples com autenticação do usuário e front end em angular js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.3.2"
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	
+	<!--Angular-->
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	
+	<!--Serviços-->
+	<script src="js/services/usuarioAPI.js"></script>
+	<script src="js/services/produtoAPI.js"></script>
+	<script src="js/services/interceptorPush.js"></script>
+	<script src="js/services/authInterceptor.js"></script>
+	
+	
+	<!--Controllers-->
+	<script src="js/controller/usuarioController.js"></script>
+	<script src="js/controller/produtoController.js"></script>
+	
+	
+</head>
+<body>
+    <div ng-controller="produtoController">
+        <table class="table">
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+            </tr>
+            <tr ng-repeat="produto in produtos">
+                <td>{{produto.nome}}</td>
+                <td>{{produto.descricao}}</td>
+                <td>{{produto.valor}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
